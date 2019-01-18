@@ -2069,6 +2069,8 @@ elseif(APPLE)
     set(OS_LIBS "${COCOA_FRAMEWORK}" "${QUARTZ_FRAMEWORK}" "${CORE_FOUNDATION_FRAMEWORK}" "${IOSURFACE_FRAMEWORK}")
 endif()
 
+target_link_libraries(llvm ${OS_LIBS})
+
 ###########################################################
 # SwiftShader Targets
 ###########################################################
